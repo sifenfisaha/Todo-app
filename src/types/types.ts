@@ -11,4 +11,5 @@ export type TodosState = {
   filter: Filter;
   loading: boolean;
   error: string | null;
+  quantity: number;
 };

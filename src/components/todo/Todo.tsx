@@ -1,7 +1,7 @@
 import React from "react";
 import TodoInput from "./TodoInput";
 import TodoList from "./TodoList";
-import Filter from "./Filter";
+import Filter from "./TodoFilter";
 
 const Todo: React.FC = () => {
   return (

@@ -8,6 +8,7 @@ const initialState: TodosState = {
   filter: "all",
   loading: false,
   error: null,
+  quantity: 0,
 };
 
 export const todosSlice = createSlice({
@@ -17,6 +18,7 @@ export const todosSlice = createSlice({
     addTodo: {
       reducer: (state, action: PayloadAction<Todo>) => {
         state.todos.push(action.payload);
+        state.quantity += 1;
       },
       prepare: (text: string) => {
         return {
@@ -26,7 +28,10 @@ export const todosSlice = createSlice({
     },
     toggleTodo: (state, action: PayloadAction<String>) => {
       const todo = state.todos.find((todo) => todo.id === action.payload);
-      if (todo) todo.completed = !todo.completed;
+      if (todo) {
+        todo.completed = !todo.completed;
+        todo.completed ? (state.quantity -= 1) : (state.quantity += 1);
+      }
     },
     editTodo: (state, action: PayloadAction<{ id: string; text: string }>) => {
       const todo = state.todos.find((todo) => todo.id === action.payload.id);
