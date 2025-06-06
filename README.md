@@ -58,4 +58,4 @@ This app was inspired by the [Frontend Mentor Todo App Challenge](https://www.fr
 
 This project is open-source under the [MIT License](LICENSE).
 
-Built with ❤️ by [Your Name](https://github.com/sifenfisaha)
+Built with ❤️ by [sifen fisha](https://github.com/sifenfisaha)
