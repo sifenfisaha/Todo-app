@@ -1,54 +1,76 @@
-# React + TypeScript + Vite
+Here's a professional and beginner-friendly `README.md` you can use for your GitHub repo:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+````markdown
+# 📝 React Todo App with Theme Toggle & Redux Toolkit
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+A modern and minimalist Todo app built with **React**, **TypeScript**, **Redux Toolkit**, and **Tailwind CSS**. Includes full **CRUD functionality**, **filtering**, **theme toggle**, and **localStorage persistence**.
 
-## Expanding the ESLint configuration
+## 🚀 Features
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- ✅ Add, edit, complete, and delete todos
+- 🎯 Filter todos by status: All / Active / Completed
+- 🌙 Light & Dark theme toggle (persists)
+- 💾 State persistence with localStorage
+- ⚛️ Built with React + Redux Toolkit
+- 💅 Styled using Tailwind CSS
+- 🔒 Type-safe with TypeScript
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 📸 Preview
+
+![App Screenshot](./screenshot.png)
+
+## 🧱 Tech Stack
+
+- React
+- TypeScript
+- Redux Toolkit
+- Tailwind CSS
+- localStorage
+
+## 🛠️ Getting Started
+
+1. **Clone the repo**
+
+```bash
+git clone https://github.com/your-username/todo-app.git
+cd todo-app
+```
+````
+
+2. **Install dependencies**
+
+```bash
+npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+3. **Run the app**
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+```bash
+npm run dev
+```
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+4. **Build for production**
+
+```bash
+npm run build
+```
+
+- [ ] User authentication (optional)
+
+## 🙌 Acknowledgements
+
+Inspired by [Frontend Mentor - Todo App](https://www.frontendmentor.io/challenges/todo-app-Su1_KokOW) challenge.
+
+## 📄 License
+
+This project is open source under the [MIT License](LICENSE).
+
+---
+
+Built with 💙 by [Your Name](https://github.com/sifenfisaha)
+
+```
+
 ```
