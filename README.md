@@ -1,11 +1,8 @@
-Here's a professional and beginner-friendly `README.md` you can use for your GitHub repo:
-
----
-
-````markdown
 # 📝 React Todo App with Theme Toggle & Redux Toolkit
 
 A modern and minimalist Todo app built with **React**, **TypeScript**, **Redux Toolkit**, and **Tailwind CSS**. Includes full **CRUD functionality**, **filtering**, **theme toggle**, and **localStorage persistence**.
+
+![App Screenshot](./screenshot.png)
 
 ## 🚀 Features
 
@@ -17,60 +14,48 @@ A modern and minimalist Todo app built with **React**, **TypeScript**, **Redux T
 - 💅 Styled using Tailwind CSS
 - 🔒 Type-safe with TypeScript
 
-## 📸 Preview
-
-![App Screenshot](./screenshot.png)
-
 ## 🧱 Tech Stack
 
-- React
-- TypeScript
-- Redux Toolkit
-- Tailwind CSS
-- localStorage
+- [React](https://reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Redux Toolkit](https://redux-toolkit.js.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+
+## 📂 Folder Structure
 
 ## 🛠️ Getting Started
 
-1. **Clone the repo**
+### 1. Clone the repo
 
 ```bash
 git clone https://github.com/your-username/todo-app.git
 cd todo-app
 ```
-````
 
-2. **Install dependencies**
+### 2. Install dependencies
 
 ```bash
 npm install
 ```
 
-3. **Run the app**
+### 3. Run the app
 
 ```bash
 npm run dev
 ```
 
-4. **Build for production**
+### 4. Build for production
 
 ```bash
 npm run build
 ```
 
-- [ ] User authentication (optional)
-
 ## 🙌 Acknowledgements
 
-Inspired by [Frontend Mentor - Todo App](https://www.frontendmentor.io/challenges/todo-app-Su1_KokOW) challenge.
+This app was inspired by the [Frontend Mentor Todo App Challenge](https://www.frontendmentor.io/challenges/todo-app-Su1_KokOW).
 
 ## 📄 License
 
-This project is open source under the [MIT License](LICENSE).
+This project is open-source under the [MIT License](LICENSE).
 
----
-
-Built with 💙 by [Your Name](https://github.com/sifenfisaha)
-
-```
-
-```
+Built with ❤️ by [Your Name](https://github.com/sifenfisaha)
