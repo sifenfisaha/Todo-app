@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import type { Filter } from "../../types/types";
 import { useAppDispatch } from "../../hooks/useAppDispatch";
 import { setFilter } from "../../features/todos/todosSlice";
-import { useAppSelector } from "../../hooks/useAppSelector";
 
 const FilterButtons: React.FC = () => {
   const [activeFilter, setActiveFilter] = useState("all");

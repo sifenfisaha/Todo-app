@@ -38,7 +38,11 @@ export const todosSlice = createSlice({
       if (todo) todo.text = action.payload.text;
     },
     deleteTodo: (state, action: PayloadAction<string>) => {
-      state.todos.filter((todo) => todo.id !== action.payload);
+      console.log(action.payload);
+      state.todos = state.todos.filter((todo) => todo.id !== action.payload);
+      if (state.todos.length !== 0) {
+        state.quantity -= 1;
+      }
     },
     setFilter: (state, action: PayloadAction<Filter>) => {
       state.filter = action.payload;
@@ -52,6 +56,9 @@ export const todosSlice = createSlice({
     loadTodos: (state, action: PayloadAction<Todo[]>) => {
       state.todos = action.payload;
     },
+    clearCompleted: (state) => {
+      state.todos = state.todos.filter((todo) => todo.completed === false);
+    },
   },
 });
 
@@ -64,6 +71,7 @@ export const {
   setLoading,
   setError,
   loadTodos,
+  clearCompleted,
 } = todosSlice.actions;
 
 export default todosSlice.reducer;
