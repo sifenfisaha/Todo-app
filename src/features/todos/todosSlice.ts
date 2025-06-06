@@ -3,7 +3,7 @@ import type { TodosState, Todo, Filter } from "../../types/types";
 import type { PayloadAction } from "@reduxjs/toolkit";
 import { nanoid } from "@reduxjs/toolkit";
 
-const initialState: TodosState = {
+export const initialState: TodosState = {
   todos: [],
   filter: "all",
   loading: false,

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import lightIcon from "../assets/icon-sun.svg";
 import darkIcon from "../assets/icon-moon.svg";
-import { applyTheme } from "../theme/types";
+import { applyTheme } from "../theme/theme";
 
 const Header: React.FC = () => {
   const [isDark, setIsDark] = useState<boolean>(false);
