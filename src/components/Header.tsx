@@ -14,9 +14,9 @@ const Header: React.FC = () => {
       <h1 className="text-white font-bold text-3xl tracking-[0.75rem]">TODO</h1>
       <button className="cursor-pointer" onClick={handleThemeToggle}>
         {isDark ? (
-          <img src={darkIcon} alt="moon" />
-        ) : (
           <img src={lightIcon} alt="sun" />
+        ) : (
+          <img src={darkIcon} alt="moon" />
         )}
       </button>
     </header>
